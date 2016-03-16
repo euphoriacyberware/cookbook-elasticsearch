@@ -80,7 +80,7 @@ class ElasticsearchCookbook::ConfigureResource < Chef::Resource::LWRPBase
   # must supply ALL needed defaults, and don't use nil as a value in the hash.
   attribute(:default_configuration, kind_of: Hash, default: {
               # === NAMING
-              'cluster.name' => 'elasticsearch',
+              'cluster.name' => 'graylog2',
               # can't access node.name, so expect to have to set set this
               'node.name' => Chef::Config[:node_name],
 
